@@ -12,19 +12,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const defaultMarkdown = `
   # Heading 1
-  ## Heading 2
-  [Link](https://www.example.com)
-  \`inline code\`
-  \`\`\`
-  // Code block
-  const greeting = 'Hello';
-  console.log(greeting);
-  \`\`\`
-  - List item 1
-  - List item 2
-  > Blockquote
-  ![Image](https://via.placeholder.com/150)
-  **Bold text**
+## Heading 2
+### Heading 3
+**boldtext**
+
+*italicized text*
+ > blockquote
+
+**Ordered List**
+1. First item
+2. Second item
+3. Third item
+
+**Unordered List**
+- First item
+- Second item
+- Third item
+
+**Task List**
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media 
+
+**Link** 
+[title](https://www.example.com)
+
+**Image**
+![alt text](https://via.placeholder.com/150)
+
+**Inline Code**
+\`Console.log("Hello, World");\`
+
+**Block Code**
+\`\`\`
+const toPrint = "Goodbye, World";
+console.log(toPrint);
+\`\`\` 
       `;
     editor.value = defaultMarkdown;
     updatePreview();
