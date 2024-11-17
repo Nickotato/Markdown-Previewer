@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     editor.addEventListener("input", updatePreview);
 
-    // Initial load
     const defaultMarkdown = `
   # Heading 1
   ## Heading 2
